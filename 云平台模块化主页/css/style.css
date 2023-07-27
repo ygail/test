@@ -1,0 +1,355 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+    color: #333;
+    background-color: #fff;
+    min-width: 1226px;
+}
+
+a {
+    text-decoration: none;
+  }
+
+ul, ol {
+    list-style: none;
+}
+
+i {
+    font-family: "iconfont" !important;
+    font-style: normal;
+}
+
+/* head样式定义 */
+.rectangle {
+  width: 1920px;
+  height: 64px;
+  background: rgba(255,255,255,0.39);
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+  opacity: 1;
+  display: flex; /* 使用 Flexbox 布局 */
+}
+.container{
+  display: flex;
+
+}
+/* --------------左侧目录样式定义 ----------------------------------------*/
+.container .menu {
+  width: 88px;
+  height: 100%;
+  background: #ffffff; 
+  box-shadow: 1px 0px 0px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+/* 目录方框样式定义 */
+.box {
+  width: 88px;
+  height: 88px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  margin-bottom: 0; /* 取消方框之间的垂直间距 */
+  display: flex;
+  justify-content: center; /* 将文字水平居中 */
+  align-items: center; /* 将文字垂直居中 */
+
+  transition: background 0.3s, color 0.3s; /* 添加过渡效果 */
+}
+/* 当鼠标悬停在 .box 上时，修改背景颜色和文字颜色 */
+.box:hover {
+  background: rgba(38, 208, 195, 1);
+}
+.box:hover .box-text{
+  color: rgba(255, 255, 255, 1);
+}
+/* 方框文字样式定义 */
+.box-text {
+  width: 56px;
+  height: 19px;
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  line-height: 19px;
+  color: #313030;
+  opacity: 1;
+  margin-top: 50px;
+}
+/* --------------左侧目录样式定义 END---------------------------------------- */
+/* --------------目录右侧选项样式定义 --------------*/
+.nav-bar{
+  width: 294px;
+  height: 100%;
+  background: rgba(255,255,255,0.39);
+  box-shadow: 1px 0px 0px rgba(0,0,0,0.1);
+  opacity: 1;
+}
+.nav-bar li{
+  width: 262px;
+  height: 200px;
+  background: rgba(241,242,244,0.39);
+  border: 1px solid #26D0C3;
+  box-sizing: border-box;
+  margin: 16px;
+}
+.nav-bar li img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto; 
+}
+/* --------------目录右侧选项样式定义 END--------------*/
+/* --------------content定义 --------------*/
+.container-main {
+  width: 1538px;
+  height: 100%;
+  background: rgba(241, 242, 244, 1);
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.container-main .title{
+  width: 100%;
+  height: 56px;
+  position: relative;
+}
+.container-main .title h2{
+  margin-left: 20px;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  line-height: 56px;
+  color: #333333;
+  float: left;
+}
+.container-main .title p{
+  right: 0;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  position: absolute;
+  font-weight: 300;
+  line-height: 56px;
+  color: #AAAAAA;
+  opacity: 1;
+}
+.container-main .title p i{
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.function-lan {
+  width: 1200px;
+  height: 185px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  border-radius: 6px;
+  margin-top: 16px;
+  position: relative;
+  display: flex; /* 使用 Flexbox 布局 */
+  justify-content: space-around; /* 子元素水平平均分布 */
+  align-items: center; /* 垂直居中子元素 */
+}
+.function-lan li {
+  margin-top: 30px;
+  margin-right: 10px; /* 子元素之间的间距 */
+  display: flex; 
+  flex-direction:column;
+  align-items: center;
+
+}
+.function-lan li div {
+  width: 78px;
+  height: 78px;
+  background: rgba(241, 242, 244, 0.39);
+  border: 1px solid #26D0C3;
+  box-sizing: border-box;
+  border-radius: 50%; /* 使容器变成圆形 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.function-lan li img{
+  width: 41px;
+  height: 41px;
+}
+.function-lan li p{
+  font-size: 18px;
+  margin-top: 17px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333333;
+  opacity: 1;
+}
+.rmcp {
+  width: 1200px;
+  height: 284px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  border-radius: 6px;
+  margin: 16px;
+  position: relative;
+  float: left;
+}
+.rmcp ul{
+  margin-top: 38px;
+  margin-left: 24px;
+  margin-right: 24px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rmcp ul li{
+  width: 274px;
+  height: 144px;
+  justify-content: space-around;
+  margin-right: 18px;
+}
+.rmcp ul li h2{
+  margin: 14px 20px ;
+  font-size: 22px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.rmcp ul li .abstract{
+  margin: 5px 20px;
+  width: 221px;
+  height: 40px;
+  font-size: 13px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.rmcp ul li div{
+  width: 242px;
+  height: 20px;
+  margin: 16px;
+  position:relative;
+}
+.rmcp ul li div img{
+  float: left;
+  margin-top: 2px;
+}
+.rmcp ul li div p{
+  font-size: 14px;
+  font-family: Lantinghei SC;
+  font-weight: 200;
+  color: #FFFFFF;
+  float: left;
+  top: 50%;
+  bottom: 50%;
+}
+
+.box-school-pro{
+  width: 1200px;
+  height: 284px;
+  background: rgba(241,242,244,0.39);  
+}
+.ranking {
+  float: left;
+  width: 592px;
+  height: 284px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  border-radius: 6px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;/*换行显示*/
+  justify-content: space-between;
+}
+.ranking_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px;
+}
+.ranking_list dl{
+  width: 266px;
+}
+
+.ranking_list dl dd p{
+  float: left;
+}
+.ranking_list dl dd p::before{
+  content: counter(item); /* 使用计数器显示序号 */
+  counter-increment: item; /* 递增计数器 */
+  position: absolute;
+  top: 0;
+  left: -10px; /* 调整左边位置，根据需要设置 */
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; 
+}
+.ranking_list dl dd .HotItem{
+  float: right;  
+}
+#professional_ranking {
+  float: left;
+  width: 592px;
+  height: 284px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  border-radius: 6px;
+  margin-left: 16px;
+  
+}
+.onebyone {
+  width: 1200px;
+  height: 284px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: relative;
+  border-radius: 6px;
+  margin: 16px;
+}
+.box-tjyx-xgkzx{
+  width: 1200px;
+  height: 284px;
+  background: rgba(241,242,244,0.39);  
+}
+.tjyx {
+  float: left;
+  width: 800px;
+  height: 284px;
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  opacity: 1;
+  border-radius: 6px;
+}
+
+.xgkzx {
+  float: left;
+  width: 384px;
+  height: 284px;
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  opacity: 1;
+  border-radius: 6px;
+  margin-left: 16px;
+
+}
+
+.tjkc {
+  width: 1200px;
+  height: 284px;
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  opacity: 1;
+  border-radius: 6px;
+  margin-top: 16px;
+}
